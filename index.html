@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        nav ul li a:hover {
+            color: orange;
+        }
+
+        .login-btn {
+            color: white;
+            background-color: #007bff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: calc(100vh - 60px); /* Subtract header height */
+            padding: 0 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .main-content {
+            max-width: 50%;
+        }
+
+        .main-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .cta-button {
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        .send-money-form {
+            background-color: white;
+            color: black;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .send-money-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .send-money-form form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .send-money-form form .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .send-money-form form .input-group input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .send-money-form form .input-group select {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-left: none;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .send-money-form form select, 
+        .send-money-form form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .send-money-form form button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .send-money-form form button:hover {
+            background-color: #0056b3;
+        }
+
+        .send-money-form form p {
+            margin: 10px 0;
+            font-size: 12px;
+        }
+
+        .send-money-form form a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Roysha</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Send Money</a></li>
+                <li><a href="#">Receive Money</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="login-btn">Login</a>
+    </header>
+    <main>
+        <div class="main-content">
+            <h1>Transfer Money Across <br>World In Real Time <br>With No Charge</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+            <a href="#" class="cta-button">Watch Video</a>
+        </div>
+        <div class="send-money-form">
+            <h2>Send Money</h2>
+            <form>
+                <label for="amount">Send Amount</label>
+                <div class="input-group">
+                    <input type="text" id="amount" placeholder="$1000.00">
+                    <select id="currency">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="gbp">GBP</option>
+                    </select>
+                </div>
+                <label for="country">Receiver Country</label>
+                <select id="country">
+                    <option>Select Country</option>
+                    <option>Nigeria</option>
+                    <option>USA</option>
+                    <option>United Kingdom</option>
+                </select>
+                <label for="delivery">Delivery Type</label>
+                <select id="delivery">
+                    <option>Choose Delivery Type</option>
+                    <option>Priority</option>
+                    <option>Premium</option>
+                    <option>Advanced</option>
+                    <option>Basic</option>
+                </select>
+                <button type="submit">Continue Transition</button>
+                <p>By clicking continue, I agree with <a href="#">Terms & Policy</a></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

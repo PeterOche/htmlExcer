@@ -1,0 +1,147 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background: url('images/backgroundImage.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.login-btn {
+    color: white;
+    background-color: #007bff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 60px); /* Subtract header height */
+    padding: 0 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-content {
+    max-width: 60%;
+}
+
+.main-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.send-money-form {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.send-money-form h2 {
+    margin-bottom: 20px;
+}
+
+.send-money-form form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.send-money-form form input,
+.send-money-form form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.send-money-form form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.send-money-form form button:hover {
+    background-color: #0056b3;
+}
+
+.send-money-form form p {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.send-money-form form a {
+    color: #007bff;
+    text-decoration: none;
+}
