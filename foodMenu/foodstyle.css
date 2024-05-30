@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/Fried-Plantains-with-Hot-Pepper-Sauce-2.jpg') no-repeat center center fixed; /* Replace 'food-background.jpg' with the path to your image */
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+img {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}

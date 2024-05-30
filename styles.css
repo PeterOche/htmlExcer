@@ -7,6 +7,8 @@ body {
     color: white;
 }
 
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -18,7 +20,7 @@ header {
 header .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #f58742;
 }
 
 nav ul {
@@ -39,109 +41,116 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: orange;
+    color: #f58742;
 }
 
-.login-btn {
-    color: white;
-    background-color: #007bff;
-    padding: 8px 16px;
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
     border: none;
     border-radius: 4px;
-    text-decoration: none;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f58742;
+    color: white;
     cursor: pointer;
 }
 
-.login-btn:hover {
-    background-color: #0056b3;
+.search-container button:hover {
+    background-color: darkorange;
 }
 
 main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: calc(100vh - 60px); /* Subtract header height */
+    height: calc(100vh - 60px);
     padding: 0 50px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
     max-width: 60%;
 }
 
 .main-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #fff;
 }
 
 .main-content p {
     font-size: 18px;
     margin-bottom: 20px;
-    color: #fff;
 }
 
-.cta-button {
+.login-button {
     padding: 12px 24px;
-    background-color: #007bff;
-    color: white;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    background-color: #f58742;
+    color: black;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;
     font-size: 16px;
     cursor: pointer;
 }
 
-.cta-button:hover {
-    background-color: #0056b3;
+.login-button:hover {
+    background-color: darkorange;
 }
 
-.send-money-form {
-    background-color: white;
-    color: black;
+.login-form {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 30px;
     border-radius: 8px;
-    max-width: 300px;
+    max-width: 350px;
+    text-align: center;
 }
 
-.send-money-form h2 {
+.login-form h2 {
     margin-bottom: 20px;
 }
 
-.send-money-form form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.send-money-form form input,
-.send-money-form form select {
+.login-form form input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    margin-right: 10px;
+    border: none;
     border-radius: 4px;
 }
 
-.send-money-form form button {
+.login-form form button {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
+    border-radius: 12px;
+    background-color: #f58742;
+    color: black;
     cursor: pointer;
     margin-bottom: 10px;
 }
 
-.send-money-form form button:hover {
-    background-color: #0056b3;
+.login-form form button:hover {
+    background-color: darkorange;
 }
 
-.send-money-form form p {
+.login-form form p {
     margin: 10px 0;
-    font-size: 12px;
 }
 
-.send-money-form form a {
-    color: #007bff;
+.login-form form a {
+    color: orange;
     text-decoration: none;
 }
